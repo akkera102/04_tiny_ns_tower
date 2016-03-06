@@ -8,7 +8,7 @@ Tiny NS-Tower for Arduboy
 
 
 ## Rule
-character must climb tower. goal is 30 floor.
+player must climb tower. goal is 30 floor.
 
 
 ## Controls
