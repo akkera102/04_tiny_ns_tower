@@ -230,7 +230,7 @@ bool StageIsHit(s8 sx, s8 sy, s8 scx, s8 scy, s8 dx, s8 dy, s8 dcx, s8 dcy)
 	return FALSE;
 }
 //---------------------------------------------------------------------------
-bool StageIsHitX(s8 sx, s8 scx, u8 num)
+bool StageIsHitPlateX(s8 sx, s8 scx, u8 num)
 {
 	s8 dx  = Stage.d[num].x;
 	s8 dcx = 24;

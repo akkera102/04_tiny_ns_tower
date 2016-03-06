@@ -34,6 +34,9 @@ void ChrExec(void)
 //---------------------------------------------------------------------------
 void ChrExecCalcX(void)
 {
+	ChrExecFmx();
+
+
 	Chr.fx += Chr.fmx * Chr.dir;
 
 	if(Chr.fx < NUM2FIX(4+1))
@@ -47,8 +50,6 @@ void ChrExecCalcX(void)
 		Chr.fx = NUM2FIX(100 - Chr.cx - 1);
 		Chr.dir *= -1;
 	}
-
-	ChrExecFmx();
 }
 //---------------------------------------------------------------------------
 void ChrExecCalcY(void)
@@ -68,7 +69,7 @@ void ChrExecCalcY(void)
 void ChrExecMove(void)
 {
 	// プレートの上に乗っているか、x座標分のみ判定を行います
-	if(StageIsHitX(FIX2NUM(Chr.fx), Chr.cx, Chr.plateNo) == FALSE)
+	if(StageIsHitPlateX(FIX2NUM(Chr.fx), Chr.cx, Chr.plateNo) == FALSE)
 	{
 		Chr.state = CHR_STATE_FALL;
 		ChrExecFall();
@@ -168,7 +169,6 @@ void ChrExecFall(void)
 	}
 
 	Chr.plateNo = StageGetHitPlateNo(x, y + Chr.cy, Chr.cx, 1, my + 1);
-	ChrExecFmx();
 
 	if(Chr.fmy != 0)
 	{

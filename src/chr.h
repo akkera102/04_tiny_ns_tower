@@ -49,7 +49,6 @@ void ChrDrawUnit(void);
 void ChrDrawGauge(void);
 
 bool ChrIsEnd(void);
-void ChrGetFmx(void);
 
 
 #ifdef __cplusplus

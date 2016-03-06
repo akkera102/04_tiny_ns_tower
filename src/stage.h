@@ -58,7 +58,7 @@ void StageDrawWall(void);
 void StageDrawPlate(void);
 
 bool StageIsHit(s8 sx, s8 sy, s8 scx, s8 scy, s8 dx, s8 dy, s8 dcx, s8 dcy);
-bool StageIsHitX(s8 sx, s8 scx, u8 num);
+bool StageIsHitPlateX(s8 sx, s8 scx, u8 num);
 bool StageIsHitPlate(s8 x, s8 y, s8 cx, s8 cy, s8 my);
 bool StageIsPlateTypeBeltL(u8 num);
 bool StageIsPlateTypeBeltR(u8 num);

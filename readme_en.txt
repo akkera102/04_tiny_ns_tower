@@ -8,7 +8,7 @@ Tiny NS-Tower for Arduboy
 
 
 ## Rule
-player must climb tower. goal is 30 floor.
+player climb tower. goal is 30 floor.
 
 
 ## Controls
@@ -30,7 +30,7 @@ AVR Memory Usage
 ----------------
 Device: atmega32u4
 
-Program:   16086 bytes (49.1% Full)
+Program:   16084 bytes (49.1% Full)
 (.text + .data + .bootloader)
 
 Data:       1554 bytes (60.7% Full)
