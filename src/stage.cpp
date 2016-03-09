@@ -86,9 +86,9 @@ void StageExecPlate(void)
 			p->y = p->iy + __LPM(StageMoveList + Stage.moveCnt);
 		}
 
-		if(Stage.d[i].y >= OLED_SCREEN_CY+8)
+		if(p->y >= OLED_SCREEN_CY+8)
 		{
-			Stage.d[i].isUse = FALSE;
+			p->isUse = FALSE;
 		}
 	}
 }
@@ -140,6 +140,7 @@ void StageAddScroll(s8 y)
 		Stage.d[i].iy += y;
 	}
 
+
 	s8 prev = (Stage.wallSy);
 	s8 next = (Stage.wallSy + y) % 8;
 
@@ -156,7 +157,7 @@ void StageAddScroll(s8 y)
 	if(Stage.floorCnt >= 32)
 	{
 		Stage.floorCnt -= 32;
-		ScoreAddFloor();
+		ScoreAddRec();
 	}
 }
 //---------------------------------------------------------------------------

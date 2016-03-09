@@ -3,23 +3,23 @@
 
 
 //---------------------------------------------------------------------------
-tinymt32_t MathTinyMt;
+tinymt32_t RndTinyMt;
 
 
 //---------------------------------------------------------------------------
 void RndInit(void)
 {
-	tinymt32_init(&MathTinyMt, 0xF67C129B);
+	tinymt32_init(&RndTinyMt, 0xF67C129B);
 }
 //---------------------------------------------------------------------------
 void RndInitSeed(u32 num)
 {
-	tinymt32_init(&MathTinyMt, num);
+	tinymt32_init(&RndTinyMt, num);
 }
 //---------------------------------------------------------------------------
 u32 Rnd32(void)
 {
-	return tinymt32_generate_uint32(&MathTinyMt);
+	return tinymt32_generate_uint32(&RndTinyMt);
 }
 //---------------------------------------------------------------------------
 u32 Rnd(u32 num)

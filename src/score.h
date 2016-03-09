@@ -13,7 +13,7 @@ extern "C" {
 
 typedef struct {
 	u16  best;
-	u16  floor;
+	u16  rec;
 	u16  jump;
 
 } ST_SCORE;
@@ -27,9 +27,9 @@ void ScoreDraw(void);
 void ScoreSaveBest(void);
 void ScoreLoadBest(void);
 
-void ScoreAddFloor(void);
+void ScoreAddRec(void);
 void ScoreAddJump(void);
-bool ScoreIsEndFloor(void);
+bool ScoreIsEndRec(void);
 
 void ScoreDebug(void);
 

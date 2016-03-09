@@ -59,7 +59,7 @@ void GameExecPlay(void)
 	}
 
 
-	if(ChrIsEnd() == TRUE || ScoreIsEndFloor() == TRUE)
+	if(ChrIsEnd() == TRUE || ScoreIsEndRec() == TRUE)
 	{
 		GameSetAct(GAME_EXEC_OVER);
 	}

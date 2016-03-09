@@ -37,17 +37,17 @@ void ScoreDraw(void)
 	OledDrawStr(21, 4, "Jump");
 
 	OledDrawStr(21, 1, "%4d", Score.best);
-	OledDrawStr(21, 3, "%4d", Score.floor);
+	OledDrawStr(21, 3, "%4d", Score.rec);
 	OledDrawStr(21, 5, "%4d", Score.jump);
 }
 //---------------------------------------------------------------------------
 void ScoreSaveBest(void)
 {
-	if(Score.best > Score.floor)
+	if(Score.best > Score.rec)
 	{
 		return;
 	}
-	Score.best = Score.floor;
+	Score.best = Score.rec;
 
 
 	EepSeek(0);
@@ -75,9 +75,9 @@ void ScoreLoadBest(void)
 	Score.best = EepRead16();
 }
 //---------------------------------------------------------------------------
-void ScoreAddFloor(void)
+void ScoreAddRec(void)
 {
-	Score.floor++;
+	Score.rec++;
 }
 //---------------------------------------------------------------------------
 void ScoreAddJump(void)
@@ -85,9 +85,9 @@ void ScoreAddJump(void)
 	Score.jump++;
 }
 //---------------------------------------------------------------------------
-bool ScoreIsEndFloor(void)
+bool ScoreIsEndRec(void)
 {
-	return (Score.floor >= 30) ? TRUE : FALSE;
+	return (Score.rec >= 30) ? TRUE : FALSE;
 }
 //---------------------------------------------------------------------------
 void ScoreDebug(void)
