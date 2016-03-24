@@ -15,11 +15,11 @@ void PosAddX(s8 x)
 {
 	u8 d;
 
-	if(x <= 12)
+	if(x <= 12 + 8)
 	{
 		d = POS_LEFT;
 	}
-	else if(x >= 68)
+	else if(x >= 68 - 8)
 	{
 		d = POS_RIGHT;
 	}

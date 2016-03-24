@@ -1,7 +1,6 @@
 Tiny NS-Tower for Arduboy
 
 ## installation
-
 1. pls edit test.bat for your computer(must change COM port number)
 2. execute test.bat
 3. play it
@@ -23,6 +22,8 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
+v1.01 2016/03/24    forget moving plate.
+                    change game balance.
 v1.00 2016/03/06    first version
 
 

@@ -146,7 +146,7 @@ void StageAddScroll(s8 y)
 
 	if(prev - next >= 0)
 	{
-		StageAddPlate(PosGetRndX(), -4 + y, StageGetRndType());
+		StageAddPlate(PosGetRndX(), -8 + y, StageGetRndType());
 	}
 
 	Stage.wallSy = next;

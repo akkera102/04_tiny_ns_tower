@@ -34,12 +34,12 @@ void GameLoop(void)
 //---------------------------------------------------------------------------
 void GameExecReset(void)
 {
-	ScoreInit();
-	StageInit();
-	ChrInit();
 	ResInit();
 	PosInit();
+	ChrInit();
 	BeepInit();
+	ScoreInit();
+	StageInit();
 
 	GameSetAct(GAME_EXEC_PLAY);
 }
