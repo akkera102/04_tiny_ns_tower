@@ -22,7 +22,7 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
-v1.01 2016/03/24    forget moving plate.
+v1.01 2016/03/24    forget moving plate init.
                     change game balance.
 v1.00 2016/03/06    first version
 
