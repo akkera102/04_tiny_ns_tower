@@ -22,16 +22,19 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
+v1.02 2016/05/14    support arduboy 1.0.
 v1.01 2016/03/24    forget moving plate init.
                     change game balance.
 v1.00 2016/03/06    first version
 
 
+Arduboy 1.0 infomation.
+
 AVR Memory Usage
 ----------------
 Device: atmega32u4
 
-Program:   16080 bytes (49.1% Full)
+Program:   16090 bytes (49.1% Full)
 (.text + .data + .bootloader)
 
 Data:       1554 bytes (60.7% Full)
