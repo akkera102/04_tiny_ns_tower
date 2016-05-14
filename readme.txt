@@ -16,7 +16,7 @@ up       : reset
 
 
 ## My development
-compiler        : windows Arduino IDE 1.6.7(avr-gcc) + 1.0.6(make.exe)
+compiler        : windows Arduino IDE 1.6.8(avr-gcc) + 1.0.6(make.exe)
 image converter : python 2.6 + PIL
 etc             : Visual Studio 2015 C#
 
