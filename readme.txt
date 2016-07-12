@@ -25,6 +25,7 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
+v1.03 2016/07/12    fix button A, B
 v1.02 2016/05/14    support arduboy 1.0.
 v1.01 2016/03/24    forget moving plate init.
                     change game balance.

@@ -46,8 +46,8 @@ enum {
 
 #elif defined(ARDUBOY_DEVKIT)
 
-	KEY_A = _BV(0),
-	KEY_B = _BV(1),
+	KEY_A = _BV(1),
+	KEY_B = _BV(0),
 	KEY_R = _BV(2),
 	KEY_U = _BV(4),
 	KEY_L = _BV(5),
@@ -56,8 +56,8 @@ enum {
 #endif
 
 	KEY_DPAD  = (KEY_U | KEY_D | KEY_L | KEY_R),
-	KEY_JUMP  = (KEY_A | KEY_L),
-	KEY_RESET = (KEY_B | KEY_R),
+	KEY_JUMP  = (KEY_B | KEY_L),
+	KEY_RESET = (KEY_A | KEY_R),
 };
 
 //---------------------------------------------------------------------------
